@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ul{
+    /* float: right; */
+    list-style: none;
+    background: black;
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    display: block;
+    color: blueviolet;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: block;
+
+}
+ul li ul.dropdown{
+    /* width: 50%%; */
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: black;
+}
+
+.menu-toggle{
+    display: none;
+    float: right;
+    height: 30px;
+    width: 25px;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+
+ul li a:hover{
+    background: gray;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+@media (max-width: 700px) {
+    
+    ul li{
+        display: block;
+    }
+    ul li:hover ul.dropdown {
+        display: block;
+    }
+}
+
+/* @media (max-width: 700px) {  This is implemented with toggle button.
+    .menu-toggle{
+        display: block;
+        background-color: beige;
+    }
+    ul li{
+        display: none;
+    }
+
+  
+    
+    .menu-toggle:hover + ul li{
+        display: block;
+    }
+} */
+
