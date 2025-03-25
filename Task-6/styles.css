@@ -20,7 +20,11 @@ body{
     background: blueviolet;
     font-weight: bold;
     cursor: pointer;
+    flex-grow: 1;
+}
 
+.tabs label:hover{
+    background-color: rgb(66, 58, 58);
 }
 
 .tabs .content{
