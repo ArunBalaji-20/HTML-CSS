@@ -1,0 +1,38 @@
+body{
+    background: aliceblue;
+}
+
+.tabs{
+    display: flex;
+    flex-wrap:wrap ;
+    /* width: 100%; */
+    /* max-width: 100%; */
+    /* margin: 50px auto; */
+    /* padding: 25px; */
+}
+
+.tabs input[type="radio"]{
+    display: none;
+}
+
+.tabs label{
+    padding: 25px;
+    background: blueviolet;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.tabs .content{
+    background: gray;
+    padding: 20px;
+    width: 100%;
+    order:1;
+    height: 500px;
+    display: none;
+
+}
+
+.tabs input[type="radio"]:checked + label + .content{
+    display: block;
+}
