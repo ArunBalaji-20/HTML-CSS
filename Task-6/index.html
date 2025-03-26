@@ -23,14 +23,73 @@
                 <h2>About</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ullam modi iusto at aut deserunt quidem quo ex dolorem debitis sunt cum quam qui, nisi quae? Quaerat voluptatum eius totam!</p>
             </div>
-
             <input type="radio" id="contact" name="tabs" >
             <label for="contact">Contact</label>
             <div class="content ">
                 <h2>Contact</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque cum eum odit voluptas, maiores ex magnam beatae neque! Quibusdam temporibus perferendis accusamus praesentium iusto harum neque voluptas aliquam doloremque?</p>
             </div>
+          
         </div>
         
 </body>
 </html>
+
+
+<!-- Another way of implementing tabbed interface using :target css pesudo class<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tabs {
+      display: flex;
+      width: 300px;
+    }
+  
+    /* Style tab buttons */
+    .tabs a {
+      display: block;
+      padding: 10px;
+      background: lightgray;
+      cursor: pointer;
+      text-align: center;
+      border: 1px solid gray;
+      text-decoration: none;
+      color: black;
+    }
+  
+    /* Default content hidden */
+    .content {
+      display: none;
+      padding: 10px;
+      border: 1px solid gray;
+      background: whitesmoke;
+    }
+  
+    /* Show content when it is targeted */
+    .content:target {
+      display: block;
+    }
+  
+    /* Active tab styling */
+    .tabs a.active {
+      background: steelblue;
+      color: white;
+    }
+  </style>
+    <body>
+        <div class="tabs">
+            <a href="#tab1" class="active">Tab 1</a>
+            <a href="#tab2">Tab 2</a>
+            <a href="#tab3">Tab 3</a>
+        </div>
+        
+        <div id="tab1" class="content">Content for Tab 1</div>
+        <div id="tab2" class="content">Content for Tab 2</div>
+        <div id="tab3" class="content">Content for Tab 3</div>
+        
+    </body>
+</html> -->
