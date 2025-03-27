@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 3fr 1fr 3fr 0.5fr;
+    height: 1500px;
+    margin-top: 80px; /* Offset for the fixed header */
+}
+
+/* Fixed Header */
+.header-site{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background-color: #1E1E2E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Header Styling */
+.header-site h1{
+    font-size: 2.5rem;
+}
+
+.header-site ul{
+    display: flex;
+    gap: 30px;
+}
+.header-site a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.header-site ul li{
+    /* color:white; */
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 540;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.header-site ul li:hover{
+    background-color: rgb(6, 105, 105);
+    border-radius: 10%;
+}
+
+/* Content Sections */
+.gadgets-header{
+    grid-column: 1/4;
+    background-color: #3D5A80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    height: 100px;
+    color: rgba(255, 255, 255, 0.862);
+}
+
+
+.gadget-1,.gadget-2,.gadget-3 { 
+    background-color: gray;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Default shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.gadget-1:hover {
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+.gadget-1 img{
+    width: 100%;
+    height: 85%;
+}
+
+.gadget-1 h3,p{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 10px;
+    /* align-items: center; */
+}
+
+
+.gadget-2:hover {
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+.gadget-2 img{
+    width: 100%;
+    height: 85%;
+}
+
+.gadget-2 h3,p{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 10px;
+}
+
+
+.gadget-3:hover {
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+.gadget-3 img{
+    width: 100%;
+    height: 85%;
+}
+
+.gadget-3 h3,p{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 10px;
+    /* align-items: center; */
+}
+
+.shoes-header{
+    grid-column: 1/4;   
+    background-color: #3D5A80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.862);
+}
+
+.shoe-1,.shoe-2 ,.shoe-3{ 
+    background-color: #808080; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Default shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    /* height: 258px; */
+}
+.shoe-1 img{
+    width: 100%;
+    height: 85%;
+}
+
+.shoe-1:hover{
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.shoe-1 h3,p{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.shoe-2 img{
+    width: 100%;
+    height: 85%;
+}
+
+.shoe-2:hover{
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.shoe-2 h3,p{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 10px;
+
+}
+.shoe-3 img{
+    width: 100%;
+    height: 85%;
+}
+.shoe-3:hover{
+    transform: scale(1.05); /* Slightly enlarges */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
+}
+.shoe-3 h3,p{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.footer{
+    grid-column: 1/4;
+    background-color: #293241;
+    display: flex;
+    height: 130px;
+}
+.footer h3{
+    margin-top: 60px;
+    color: white;
+}
+
+.footer ul li{
+    list-style: none;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin: 60px;
+    cursor: pointer;
+    text-decoration: underline;
+}
