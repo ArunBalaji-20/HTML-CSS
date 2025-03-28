@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted for better responsiveness */
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav h1 {
+    color: white;
+    margin: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 228, 196, 0.466);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    background-color: blue;
+    width: 100%;
+    max-width: 1200px; /* Restricting max width for large screens */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements in a column */
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.page h1 {
+    text-align: center;
+    background-color: #333333ef;
+    padding: 20px;
+    color: white;
+    height: 80px;
+    width: 900px; 
+}
+
+.page p {
+    padding: 20px;
+    font-size: 1.5rem; 
+    background-color: #3333332d;
+    height: 500px; 
+
+    max-width: 900px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+}
+
+.photos img {
+    width: 300px;
+    height: 250px;
+}
+
+#home:target, #about:target, #gallery:target, #contact:target {
+    opacity: 1;
+}
+
+/* Responsive Design */
+/* Mobile Phones (Max-width: 768px) */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .page h1 {
+        font-size: 1.2rem;
+        height: auto;
+        padding: 15px;
+    }
+
+    .page p {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .photos {
+        grid-template-columns: 1fr;
+    }
+
+    .photos img {
+        width: 100%;
+        height: auto;
+    }
+}
