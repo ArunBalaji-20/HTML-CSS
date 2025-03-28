@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header-site{
+    position: sticky;
+    /* background-color: rgba(141, 12, 12, 0.858); */
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    width: 100vw;
+    z-index: 1000;
+    top:0;
+}
+
+.header-site h1{
+    margin-top: 30px;
+    color: black;
+    /* position: relative; */
+    text-transform: uppercase;
+}
+
+.header-site h3{
+    /* position: absolute; */
+   /* display: inline-block; */
+   margin: 0;
+   font-size: 20px;
+   font-weight: normal;
+   color: gray;
+   text-transform: uppercase;
+}
+
+.header-site ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top:40px ;
+    color: black;
+    
+    
+}
+
+.header-site ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.header-site ul li ul.dropdown li{
+    display: block;
+}
+
+.header-site ul li ul.dropdown{
+    position: absolute;
+    display: none;
+    z-index: 999;
+}
+
+ul li a:hover{
+    background: gray;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+    background-color: whitesmoke;
+    padding: 3.5px;
+}
+
+.container{
+    display: grid;
+    /* position: absolute; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 570px;
+    background-color: white;
+    gap: 20px;
+    padding: 15px
+}
+
+.item-1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    position: relative;
+    /* background-color: black; */
+}
+.item-1 img{
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+}
+
+.item-1 .content-1{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    padding: 40px;
+    color: white;
+    font-weight: bolder;
+    /* transform: translate(-50%, -50%); */
+    /* text-align: center; */
+}
+.item-1 .content-1 h1{
+    font-size: 3rem;
+}
+.item-1 .content-1 p{
+    padding: 5px;
+    font-size: 1.5rem;
+}
+.item-1 .content-1 button{
+    font-size: 1rem;
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.item-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-2{
+    position: relative;
+}
+
+.item-2 .content-2{
+    position: absolute;
+    top:40%;
+    left: 20%;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    opacity:0;
+    transition: opacity 0.8s ease-in-out;
+}
+.item-2 .content-2:hover{
+    opacity: 1;
+}
+
+.item-3 img{
+    width: 100%;
+    height: 100%;
+}
+.item-3{
+    position: relative;
+}
+
+.item-3 .content-3{
+    position: absolute;
+    top:40%;
+    left: 20%;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    opacity:0;
+    transition: opacity 0.8s ease-in-out;
+}
+.item-3 .content-3:hover{
+    opacity: 1;
+}
+
+.item-4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-4{
+    position: relative;
+}
+
+.item-4 .content-4{
+    position: absolute;
+    top:40%;
+    left: 20%;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    opacity:0;
+    transition: opacity 0.8s ease-in-out;
+}
+.item-4 .content-4:hover{
+    opacity: 1;
+}
+.item-5 img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-5{
+    position: relative;
+}
+
+.item-5 .content-5{
+    position: absolute;
+    top:40%;
+    left: 20%;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    opacity:0;
+    transition: opacity 0.8s ease-in-out;
+}
+.item-5:hover .content-5{
+    opacity: 1;
+}
+
+
+.container-2{
+    margin-top: 190px;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1fr 1fr 0.4fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+    height: 600px;
+    gap:25px;
+
+}
+
+.container-2 .block-1{
+    grid-column: 1/7;
+    background-color: white;
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.container-2 .block-1 p{
+    color: gray;
+}
+
+.container-2 .block-2{
+    position: relative;
+    /* grid-template-columns: ; */
+}
+.container-2 .block-2 button{
+    position: absolute;
+    top:50%;
+    left: 25%;
+    height: 45px;
+    width: 45px;
+    background-color: transparent;
+}
+
+
+.container-2 .block-6{
+    position: relative;
+}
+.container-2 .block-6 button{
+    position:absolute;
+    top:50%;
+    left: 25%;
+    height: 45px;
+    width: 45px;
+    background-color: transparent;
+}
+
+
+.container-2 .block-3 img{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 100%;
+
+}
+
+.container-2 .block-4 img{
+    /* background-color: wheat; */
+    height: 100%;
+    width: 100%;
+}
+
+.container-2 .block-5 img{
+    /* background-color: yellowgreen; */
+    height: 100%;
+    width: 100%;
+}
+
+.container-2 .block-5{
+    position: relative;
+}
+
+.container-2 .block-5 .block-5-sub{
+    position: absolute;
+    /* top:50%; */
+    left: 35%;
+    bottom:10%;
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.block-5-sub span{
+    background-color: whitesmoke;
+    padding: 15%;
+}
+
+.container-2 .block-7{
+    background-color: tomato;
+}
+
+
+
+.container-2 .block-9 .details{
+    /* background-color: teal; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.container-2 .block-10 .details{
+    /* background-color: teal; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.container-2 .block-11 .details{
+    /* background-color: teal; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.details +h3{
+    color: gray;
+}
+
+footer .f-1{
+    margin-top: 10%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+footer .f-1 ul{
+    margin-left: 5%;
+    padding-top: 2%;
+}
+footer .f-1 h3{
+    color: gray;
+    font-size: 1.1rem;
+}
+footer .f-1 ul li{
+    list-style-type:none ;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
