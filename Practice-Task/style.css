@@ -292,12 +292,6 @@ ul li:hover ul.dropdown{
     padding: 15%;
 }
 
-.container-2 .block-7{
-    background-color: tomato;
-}
-
-
-
 .container-2 .block-9 .details{
     /* background-color: teal; */
     display: flex;
@@ -342,4 +336,83 @@ footer .f-1 ul li{
     padding-top: 10px;
     font-size: 1.2rem;
     color: white;
+}
+
+
+@media (max-width: 1100px) {
+    .header-site {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .header-site h1, 
+    .header-site h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    .header-site ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .header-site ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a:hover{
+        background: gray;
+        padding: 5px;
+        
+
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .item-1 {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .container-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .container-2 .block-1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .container-2 .block-5 .block-5-sub {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5%;
+        gap: 10px;
+    }
+
+    .block-5-sub span {
+        padding: 10%;
+    }
+
+    footer .f-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .f-1 ul {
+        margin: 20px 0;
+    }
 }
